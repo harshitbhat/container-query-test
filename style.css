@@ -1,0 +1,48 @@
+.box {
+  width: 250px;
+  height: 30px;
+  font-size: 20px;
+}
+
+.box-container {
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+#box-1 {
+  background-color: red;
+  width: 60%;
+  color: aliceblue;
+}
+#box-2 {
+  background-color: yellow;
+  width: 20%;
+  text-align: center;
+}
+#box-3 {
+  background-color: blue;
+  width: 20%;
+  text-align: center;
+  color: aliceblue;
+}
+
+@media screen and (max-width: 750px) {
+  .box-container {
+    flex-wrap: wrap;
+  }
+
+  #box-1 {
+    width: 100%;
+  }
+
+  #box-2 {
+    width: 50%;
+    text-align: left;
+  }
+
+  #box-3 {
+    background-color: blue;
+    width: 50%;
+    text-align: right;
+  }
+}
